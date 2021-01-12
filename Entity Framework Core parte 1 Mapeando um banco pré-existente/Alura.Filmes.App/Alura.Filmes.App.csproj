@@ -124,7 +124,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dados\AluraFilmesContexto.cs" />
     <Compile Include="Extensions\DbContextExtensions.cs" />
+    <Compile Include="Migrations\20210111221345_inicial.cs" />
+    <Compile Include="Migrations\20210111221345_inicial.designer.cs">
+      <DependentUpon>20210111221345_inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\AluraFilmesContextoModelSnapshot.cs" />
+    <Compile Include="Negocio\Ator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -136,9 +143,6 @@
     <Content Include="Scripts\alurafilmes-cargainicial.sql" />
     <Content Include="Scripts\alurafilmes-estrutura.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Dados\" />
-    <Folder Include="Negocio\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
